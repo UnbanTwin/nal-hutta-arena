@@ -58,6 +58,14 @@ function round(char1,char2) {
             forceFight(char1,char2);
         }
 
+    }if else(char1.type == "force"&&char2.type!="force") {
+        forceFight(char1,char2);
+        strengthFight(char1,char2);
+
+    }if else(char2.type == "force"&&char1.type!="force") {
+        forceFight(char1,char2);
+        strengthFight(char1,char2);
+
     }else{
         strengthFight(char1,char2);
     }
